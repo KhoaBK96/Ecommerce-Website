@@ -1,0 +1,62 @@
+/* index page */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Spartan:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  margin: 0.75rem 0;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #88d0f7;
+  color: #333;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #333;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: white;
+  border-radius: 5px;
+}
+
+#showcase {
+  background: #333 url("../img/image-1.jpg") no-repeat center center/cover;
+  height: 100vh;
+  color: #333;
+}
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 70rem;
+  height: 100%;
+  line-height: 3rem;
+}
+
+/* shop page */
