@@ -88,10 +88,11 @@ function ready() {
 // purchaseCLicked
 function purchaseClicked() {
   alert("Thank you for your purchase");
-  var cartItems = document.getElementsByClassName("cart-content")[0];
-  while (cartItems.hasChildNodes()) {
-    cartItems.removeChild(cartItems.firstChild);
-  }
+  const cartItems = document.getElementsByClassName("cart-content")[0];
+  // while (cartItems.hasChildNodes()) {
+  //   cartItems.removeChild(cartItems.firstChild);
+  // }
+  cartItems.innerHTML = "";
   updateTotal();
 }
 // remove function
