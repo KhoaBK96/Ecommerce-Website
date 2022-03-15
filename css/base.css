@@ -29,13 +29,14 @@ p {
   align-items: center;
   list-style: none;
 }
-
+.cart-icon,
 #navbar ul li a {
   color: #333;
   padding: 0.75rem;
   margin: 0 0.25rem;
 }
 
+.cart-icon:hover,
 #navbar ul li a:hover {
   background: white;
   border-radius: 5px;
