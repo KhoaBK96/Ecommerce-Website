@@ -50,3 +50,17 @@ const product = [
 ];
 
 export default product;
+const shopContent = document.querySelector(".shop-content");
+export function displayProduct(productItem) {
+  const showItem = productItem
+    .map((item) => {
+      return `<div class="product-box">
+      <img src=${item.img} alt="product " class="product-img" />
+      <h2 class="product-title">${item.title}</h2>
+      <span class="price">${item.price}</span>
+      <i class="fa-solid fa-bag-shopping add-cart"></i>
+    </div>`;
+    })
+    .join("");
+  shopContent.innerHTML = showItem;
+}
